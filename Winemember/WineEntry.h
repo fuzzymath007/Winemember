@@ -9,6 +9,12 @@
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
+NS_ENUM(int16_t, WineEntryRating){
+    WineEntryRatingGood = 0,
+    WineEntryRatingAverage = 1,
+    WineEntryRatingBad = 3
+};
+
 
 @interface WineEntry : NSManagedObject
 

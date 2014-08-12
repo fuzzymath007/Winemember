@@ -25,6 +25,8 @@
 		57BD88A61991AB2A009E2902 /* WinememberTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 57BD88A51991AB2A009E2902 /* WinememberTests.m */; };
 		57BD88B11993207D009E2902 /* CoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 57BD88B01993207D009E2902 /* CoreDataStack.m */; };
 		57BD88B419932923009E2902 /* WineEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 57BD88B319932923009E2902 /* WineEntry.m */; };
+		57BD88B6199459B7009E2902 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57BD88B5199459B7009E2902 /* Storyboard.storyboard */; };
+		57E0E89619946864009A5F12 /* NewEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57E0E89519946864009A5F12 /* NewEntryViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,9 @@
 		57BD88B01993207D009E2902 /* CoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataStack.m; sourceTree = "<group>"; };
 		57BD88B219932923009E2902 /* WineEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WineEntry.h; sourceTree = "<group>"; };
 		57BD88B319932923009E2902 /* WineEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WineEntry.m; sourceTree = "<group>"; };
+		57BD88B5199459B7009E2902 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		57E0E89419946864009A5F12 /* NewEntryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewEntryViewController.h; sourceTree = "<group>"; };
+		57E0E89519946864009A5F12 /* NewEntryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewEntryViewController.m; sourceTree = "<group>"; };
 		615174D622494CA1ABA9C2E9 /* Pods-Winemember.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Winemember.xcconfig"; path = "Pods/Pods-Winemember.xcconfig"; sourceTree = "<group>"; };
 		750B491077C240368C599C0D /* libPods-Winemember.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Winemember.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -134,6 +139,9 @@
 				57BD88911991AB2A009E2902 /* Images.xcassets */,
 				57BD888E1991AB2A009E2902 /* Winemember.xcdatamodeld */,
 				57BD88B219932923009E2902 /* WineEntry.h */,
+				57BD88B5199459B7009E2902 /* Storyboard.storyboard */,
+				57E0E89419946864009A5F12 /* NewEntryViewController.h */,
+				57E0E89519946864009A5F12 /* NewEntryViewController.m */,
 				57BD88B319932923009E2902 /* WineEntry.m */,
 				57BD88831991AB2A009E2902 /* Supporting Files */,
 			);
@@ -251,6 +259,7 @@
 			files = (
 				57BD88871991AB2A009E2902 /* InfoPlist.strings in Resources */,
 				57BD88921991AB2A009E2902 /* Images.xcassets in Resources */,
+				57BD88B6199459B7009E2902 /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +313,7 @@
 			files = (
 				57BD88B419932923009E2902 /* WineEntry.m in Sources */,
 				57BD888D1991AB2A009E2902 /* AppDelegate.m in Sources */,
+				57E0E89619946864009A5F12 /* NewEntryViewController.m in Sources */,
 				57BD88891991AB2A009E2902 /* main.m in Sources */,
 				57BD88901991AB2A009E2902 /* Winemember.xcdatamodeld in Sources */,
 				57BD88B11993207D009E2902 /* CoreDataStack.m in Sources */,

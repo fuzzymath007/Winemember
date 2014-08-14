@@ -7,6 +7,8 @@
 //
 
 #import "NewEntryViewController.h"
+#import "CoreDataStack.h"
+#import "WineEntry.h"
 
 @interface NewEntryViewController ()
 
@@ -46,7 +48,18 @@
 }
 */
 
+-(void)insertWineEntry{
+    CoreDataStack *coreDataStack = [CoreDataStack defaultStack];
+    
+    WineEntry *entry = [NSEntityDescription insertNewObjectForEntityForName:@"WineEntry" inManagedObjectContext:coreDataStack.managedObjectContext];
+    entry.body= self.testField.text;
+    entry.date= [[NSDate date] timeIntervalSince1970];
+    [coreDataStack saveContext];
+    
+}
+
 - (IBAction)doneWasPressed:(id)sender {
+    [self insertWineEntry];
     [self dismissSelf];
 }
 
@@ -58,4 +71,6 @@
 -(void) dismissSelf{
     [self.presentingViewController dismissViewControllerAnimated:YES completion:nil];
 }
+
+
 @end

@@ -10,7 +10,7 @@
 
 @interface CoreDataStack : NSObject
 
-+ (instancetype) defaultDtack;
++ (instancetype) defaultStack;
 
 @property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 @property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;

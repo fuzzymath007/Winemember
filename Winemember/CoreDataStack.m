@@ -14,7 +14,7 @@
 @synthesize managedObjectModel = _managedObjectModel;
 @synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
 
-+ (instancetype) defaultDtack{
++ (instancetype) defaultStack{
     static CoreDataStack *defaultStack;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{

@@ -12,5 +12,6 @@
 - (IBAction)doneWasPressed:(id)sender;
 - (IBAction)cancelWasPressed:(id)sender;
 
+@property (strong, nonatomic) IBOutlet UITextField *testField;
 
 @end

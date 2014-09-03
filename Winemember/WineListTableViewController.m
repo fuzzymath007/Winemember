@@ -11,6 +11,8 @@
 
 @interface WineListTableViewController ()
 
+@property (nonatomic, strong) NSFetchedResultsController *fetchedResultsController;
+
 @end
 
 @implementation WineListTableViewController
@@ -50,6 +52,15 @@
     fetchRequest.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"Date" ascending:NO]];
     
     return fetchRequest;
+}
+
+-(NSFetchedResultsController *) fetchedResultsController{
+    if (self.fetchedResultsController != nil) {
+        return self.fetchedResultsController;
+    }
+    
+    CoreDataStack *coreDataStack = [CoreDataStack defaultStack];
+    
 }
 
 /*
